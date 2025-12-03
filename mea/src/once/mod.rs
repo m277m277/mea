@@ -16,9 +16,9 @@
 //!
 //! The module currently provides:
 //!
-//! - [`Once`]: A primitive that ensures a one-time asynchronous operation runs at most once, even
+//! * [`Once`]: A primitive that ensures a one-time asynchronous operation runs at most once, even
 //!   when called concurrently.
-//! - [`OnceCell`]: A cell that can be written to at most once, storing a value produced
+//! * [`OnceCell`]: A cell that can be written to at most once, storing a value produced
 //!   asynchronously.
 
 #[allow(clippy::module_inception)]

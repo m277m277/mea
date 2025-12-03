@@ -28,7 +28,9 @@
 //! * [`Condvar`]: A condition variable that allows tasks to wait for a notification
 //! * [`Latch`]: A single-use barrier that allows one or more tasks to wait until a signal is given
 //! * [`Mutex`]: A mutual exclusion primitive for protecting shared data
-//! * [`OnceCell`]: A cell that can be initialized only once and provides safe concurrent access
+//! * [`Once`]: A primitive that ensures a one-time asynchronous operation runs at most once, even
+//!   when called concurrently
+//! * [`OnceCell`]: A cell that can be written to at most once and provides safe concurrent access
 //! * [`RwLock`]: A reader-writer lock that allows multiple readers or a single writer at a time
 //! * [`Semaphore`]: A synchronization primitive that controls access to a shared resource
 //! * [`ShutdownSend`] & [`ShutdownRecv`]: A composite synchronization primitive for managing
@@ -63,6 +65,7 @@
 //! [`ShutdownSend`]: shutdown::ShutdownSend
 //! [`ShutdownRecv`]: shutdown::ShutdownRecv
 //! [`WaitGroup`]: waitgroup::WaitGroup
+use crate::once::Once;
 
 pub(crate) mod internal;
 
