@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+## [0.6.3] - 2026-01-21
+
 ### Improvements
 
 * `OnceMap` no longer requires `K: Clone` everywhere.
