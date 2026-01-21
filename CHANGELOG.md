@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+## [0.6.2] - 2026-01-21
+
 ### New features
 
 * Implement `once::OnceMap` to run computation only once and store the results in a hash map.
